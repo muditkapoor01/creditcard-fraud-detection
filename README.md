@@ -16,6 +16,7 @@ The dataset used is the Credit Card Fraud Detection dataset from Kaggle:
 2. Install required Python libraries:  
 ```bash
 pip install -r requirements.txt
+```
 
 Key Technologies
 Python (Pandas, NumPy, Scikit-learn)
