@@ -21,11 +21,11 @@ pip install -r requirements.txt
 ## Key Technologies
 Python (Pandas, NumPy, Scikit-learn)
 
-# Data Visualization (Matplotlib, Seaborn)
+### Data Visualization (Matplotlib, Seaborn)
 
-# Machine Learning (Logistic Regression, Random Forest, KMeans Clustering)
+### Machine Learning (Logistic Regression, Random Forest, KMeans Clustering)
 
-# Data Analysis and Feature Engineering
+### Data Analysis and Feature Engineering
 
 ## Summary of Findings
 The dataset is highly imbalanced with very few fraud cases.
