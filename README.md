@@ -18,16 +18,16 @@ The dataset used is the Credit Card Fraud Detection dataset from Kaggle:
 pip install -r requirements.txt
 ```
 
-Key Technologies
+##Key Technologies
 Python (Pandas, NumPy, Scikit-learn)
 
-Data Visualization (Matplotlib, Seaborn)
+#Data Visualization (Matplotlib, Seaborn)
 
-Machine Learning (Logistic Regression, Random Forest, KMeans Clustering)
+#Machine Learning (Logistic Regression, Random Forest, KMeans Clustering)
 
-Data Analysis and Feature Engineering
+#Data Analysis and Feature Engineering
 
-Summary of Findings
+##Summary of Findings
 The dataset is highly imbalanced with very few fraud cases.
 
 Data preprocessing and feature scaling improved model performance.
@@ -36,5 +36,5 @@ Random Forest classifier achieved high accuracy and recall in detecting fraudule
 
 Visualization techniques helped identify patterns and key features contributing to fraud detection.
 
-Business Value
+##Business Value
 Detecting credit card fraud effectively helps protect customers and financial institutions, reducing losses and maintaining trust.
