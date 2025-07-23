@@ -1,40 +1,102 @@
-# Credit Card-Fraud-Detection
-Credit Card Fraud Detection project using machine learning on Kaggle data. Includes data preprocessing, analysis, visualization, and Random Forest modeling to identify fraudulent transactions. A complete end-to-end notebook for fraud analytics and risk mitigation in financial services.
-# Credit Card Fraud Detection
+# 🛡️ Credit Card Fraud Detection
 
-## Project Overview
-This project analyzes credit card transactions to detect fraudulent activities using machine learning techniques. The goal is to build a predictive model that can accurately identify fraud cases and help minimize financial losses.
+A complete machine learning project to detect fraudulent credit card transactions using real-world data. This project focuses on handling imbalanced datasets, building classification models, and evaluating performance to support financial fraud mitigation.
 
-## Dataset
-The dataset used is the Credit Card Fraud Detection dataset from Kaggle:  
-[https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+---
 
-## How to Run
+## 📌 Project Overview
 
+This project uses supervised machine learning to detect fraudulent credit card transactions. It involves data preprocessing, exploratory data analysis, model training, and evaluation to distinguish between legitimate and fraudulent activity.
 
-1. Download the `creditcard.csv` dataset from Kaggle and place it in the project directory.  
-2. Install required Python libraries:  
-```bash
-pip install -r requirements.txt
-```
+---
 
-## Key Technologies
-Python (Pandas, NumPy, Scikit-learn)
+## 📂 Dataset
 
-### Data Visualization (Matplotlib, Seaborn)
+- **Source**: [Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- **Records**: 284,807 transactions
+- **Features**: 30 numerical variables (V1-V28 are PCA components, plus `Time`, `Amount`, and `Class`)
+- **Fraud Ratio**: Only 0.17% of transactions are fraudulent
 
-### Machine Learning (Logistic Regression, Random Forest, KMeans Clustering)
+---
 
-### Data Analysis and Feature Engineering
+## 🛠️ Technologies Used
 
-## Summary of Findings
-The dataset is highly imbalanced with very few fraud cases.
+- **Language**: Python
+- **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Models**: Logistic Regression, Random Forest Classifier
 
-Data preprocessing and feature scaling improved model performance.
+---
 
-Random Forest classifier achieved high accuracy and recall in detecting fraudulent transactions.
+## 📊 Exploratory Data Analysis (EDA)
 
-Visualization techniques helped identify patterns and key features contributing to fraud detection.
+- Identified severe class imbalance
+- Visualized distribution of `Amount`, `Time`, and anonymized features
+- Used correlation matrix and boxplots to detect potential fraud patterns
+- Found distinct transaction behavior in fraud vs. non-fraud cases
 
-## Business Value
-Detecting credit card fraud effectively helps protect customers and financial institutions, reducing losses and maintaining trust.
+---
+
+## 🔧 Data Preprocessing
+
+- Scaled `Amount` and `Time` using StandardScaler
+- Performed train-test split (70:30 ratio)
+- Used undersampling to balance classes
+- Removed outliers and normalized features
+
+---
+
+## 🤖 Models & Results
+
+### ✅ Logistic Regression
+- **Precision (fraud class)**: 83%
+- **Recall (fraud class)**: 63%
+- **F1 Score**: 0.72
+- **ROC AUC**: 0.958
+
+### ✅ Random Forest Classifier
+- Outperformed logistic regression in recall and AUC
+- Handled class imbalance better and provided stronger generalization
+
+---
+
+## 📈 Evaluation Metrics
+
+- **Confusion Matrix**  
+  - TP: 62, FN: 36, TN: 56851, FP: 13 (Logistic Regression)
+- **Classification Report**  
+  - Balanced accuracy and precision-recall tradeoff
+- **ROC Curve**  
+  - AUC of ~0.96 indicates strong separability
+
+---
+
+## 📌 Key Insights
+
+- Fraudulent transactions have distinct patterns in feature distribution
+- Imbalanced data requires careful handling for effective fraud detection
+- Random Forest offers better recall and robustness than Logistic Regression
+
+---
+
+## 💼 Business Impact
+
+- Detecting fraud early helps financial institutions save millions
+- Improves customer trust and reduces operational risk
+- Supports regulatory compliance and customer satisfaction
+
+---
+
+## 🔮 Future Enhancements
+
+- Apply SMOTE for oversampling minority class
+- Explore XGBoost or LightGBM for better accuracy
+- Use SHAP for model explainability
+- Deploy as an API or web service for real-time fraud detection
+
+---
+
+## 🧠 Author
+
+**Mudit Kapoor**  
+Project completed as part of portfolio development for data and business analytics roles.
+
